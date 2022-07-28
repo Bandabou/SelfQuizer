@@ -3,10 +3,40 @@ import tkinter as tk
 from numpy import kaiser
 from random import random
 
+
+## -------------------------------------------------------------------------------
+#Gui PART
 window = tk.Tk()
 
 title = tk.Label(text="Quiz 0HM150")
 title.pack()
+
+#window.mainloop()
+
+start_button = tk.Button(
+    text="Start with the question & answers",
+    width  = 30,
+    height = 20,
+    bg = "black",
+    fg = "white"  
+    )
+
+start_button.pack()
+
+stop_button = tk.Button(
+    text="Finish questions",
+    width = 30,
+    height = 20,
+    bg = "black",
+    fg = "white" 
+    )
+stop_button.pack()
+
+
+## ----------------------------------------------------------------------------
+
+
+
 
 questions = []
 answers   = []
